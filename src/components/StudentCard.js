@@ -16,8 +16,8 @@ const StudentCard = props => {
                     <p className='bearcard-name'>{props.firstname} {props.lastname}</p>
                 </div>
                 <div className='bearcard-actions'>
-                    <div onClick={props.updateBear}>Update</div>
-                    <div onClick={props.deleteBear}>Delete</div>
+                    <div onClick={props.updateStudent}>Update</div>
+                    <div onClick={props.deleteStudent}>Delete</div>
                 </div>
             </div>
         </div>

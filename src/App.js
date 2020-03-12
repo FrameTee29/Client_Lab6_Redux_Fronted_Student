@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div>
-      <StudentList students={students} deleteStudent={deleteStudent} updateStudent={updateStudent}/>
+      <StudentList  deleteStudent={deleteStudent} updateStudent={updateStudent}/>
       <InputForm data={formData} onChange={setData} addStudent={addStudent}/>
     </div>
 

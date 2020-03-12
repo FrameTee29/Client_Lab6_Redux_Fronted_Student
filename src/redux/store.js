@@ -14,17 +14,17 @@ const initialform = {
 const formReducer = (data = initialform, action) => {
     switch (action.type) {
         case 'CHANGE_SID':
-            return { ...data, name: action.sid }
+            return { ...data, sid: action.sid }
         case 'CHANGE_FIRSTNAME':
-            return { ...data, weight: action.firstname }
+            return { ...data, firstname: action.firstname }
         case 'CHANGE_LASTNAME':
-            return { ...data, img: action.lastname }
+            return { ...data, lastname: action.lastname }
         case 'CHANGE_WEIGHT':
-            return { ...data, img: action.weight }
+            return { ...data, weight: action.weight }
         case 'CHANGE_HEIGHT':
-            return { ...data, img: action.height }
+            return { ...data, height: action.height }
         case 'CHANGE_LEVEL':
-            return { ...data, img: action.level }
+            return { ...data, level: action.level }
         case 'CHANGE_IMG':
             return { ...data, img: action.img }
         default: return data;
@@ -38,7 +38,7 @@ const StudentReducer = (students = [], action) => {
         case 'GET_STUDENT':
             return action.students;
         case 'ADD_STUDENT':
-            return [...students, action.students]
+            return [...students, action.student]
         case 'DELETE_STUDENT':
             return students.filter(student => +student.sid !== +action.sid)
         case 'UPDATE_STUDENT':
