@@ -9,6 +9,7 @@ const StudentCard = props => {
         <div>
             <div className='bearcard-container'>
                 <div className='bearcard' style={{ backgroundImage: `url('${props.img}')` }}>
+                    <p className='bearcard-sid'>sid:{props.sid}</p>
                     <p className='bearcard-weight'>weight:{props.weight}</p>
                     <p className='bearcard-height'>height:{props.height}</p>
                     <p className='bearcard-level'>level:{props.level}</p>
