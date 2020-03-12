@@ -4,18 +4,21 @@ import { useSelector, useDispatch } from 'react-redux'
 import './StudentCard.css';
 
 const StudentCard = props => {
-   
+
+    const students = useSelector(state => state.student)
     const form = useSelector(state => state.form)
     const dispatch = useDispatch();
 
+    
+
     const deleteStudent = async (id) => {
-        await axios.delete(`http://localhost/api/students/${props.id}`)
-        dispatch({ type: 'DELETE_STUDENT', sid: props.id })
+        await axios.delete(`http://localhost/api/students/${props.sid}`)
+        dispatch({ type: 'DELETE_STUDENT', sid: props.sid })
       }
 
       const updateStudent = async () => {
-        await axios.put(`http://localhost/api/students/${props.id}`, form)
-        dispatch({ type: 'UPDATE_STUDENT', sid:props.id , students: {...form,sid:props.id} })
+        await axios.put(`http://localhost/api/students/${props.sid}`, form)
+        dispatch({ type: 'UPDATE_STUDENT', sid:props.sid , students: {...form,sid:props.sid} })
     }
     return (
         <div>
@@ -32,6 +35,7 @@ const StudentCard = props => {
                     <div onClick={deleteStudent}>Delete</div>
                 </div>
             </div>
+            {JSON.stringify(props.id)}
         </div>
     );
 }

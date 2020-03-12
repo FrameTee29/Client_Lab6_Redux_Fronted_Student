@@ -14,6 +14,7 @@ const InputForm = props => {
       await axios.post(`http://localhost/api/students/`,form)
       dispatch({
         type: 'ADD_STUDENT', student: {
+            sid: students.length > 0 ? students.sid : 0,
             ...form
         }
     })
