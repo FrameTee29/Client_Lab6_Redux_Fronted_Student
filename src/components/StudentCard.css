@@ -26,18 +26,21 @@
     margin: 0;
     background-color: rgba(0,0,0,.60);
     color: white;
+    font-weight: bold;
 }
 .bearcard-sid {
     position: absolute;
     top: 250px;
-    right: 90px;
+
     margin: 0;
-    
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
     padding: 4px;
     font-weight: bold;
-    background-color: rgba(255,255,255,1.0);
-    color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0.60);
+    color: rgb(255 , 255, 255);
 }
 
 .bearcard-weight {
@@ -46,7 +49,10 @@
     right: 8px;
     margin: 0;
     
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     padding: 4px;
     font-weight: bold;
     background-color: rgba(255,255,255,.60);
@@ -58,7 +64,10 @@
     right: 8px;
     margin: 0;
     
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     padding: 4px;
     font-weight: bold;
     background-color: rgba(255,255,255,.60);
@@ -70,7 +79,10 @@
     right: 8px;
     margin: 0;
     
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     padding: 4px;
     font-weight: bold;
     background-color: rgba(255,255,255,.60);
